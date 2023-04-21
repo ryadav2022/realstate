@@ -1,0 +1,241 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block block %}
+<section class="home" id="home">
+  <div class="home-content">
+    <h3 class="searchheading" data-aos="fade-up">
+      Easiest way to find your ideal property
+    </h3>
+  </div>
+  <div class="container2">
+    <form id="searchhome"action="/search" method="get">
+        <i class="bx bx-search-alt"></i>
+        <input type="text"class="search"
+        placeholder="What are you looking for?">
+        <button type="submit" class="primary">Search</button>
+    </form>
+
+  </div>
+  <div class="featured-container">
+    <h2 class="heading">Featured <span>Properties</span></h2>
+    <div class="featured-wrapper">
+      <div class="featured-box mySwiper">
+        <div class="featured-content swiper-wrapper">
+          <div class="featured-slide swiper-slide">
+            <img src={% static "images/portfolio1.jpg" %} alt="" />
+            <h3>Property 1</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem dignissimos aliquid iure delectus corrupti
+              impedit, beatae aperiam ad iusto nostrum possimus cum pariatur
+              harum assumenda suscipit a, qui, tempora maxime nulla facere quo
+              ipsum tempore. Atque libero provident ad aut officia pariatur
+              voluptate quaerat delectus nesciunt, sequi eligendi aperiam
+              fugit unde nihil, iste similique illum. Dignissimos enim officia
+              consequuntur dolores.
+            </p>
+            <button class="my-button" onclick="myFunction()">View Detail</button>
+          </div>
+          <div class="featured-slide swiper-slide">
+            <img src={% static "images/portfolio5.jpg" %} alt="" />
+            <h3>Property 2</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem dignissimos aliquid iure delectus corrupti
+              impedit, beatae aperiam ad iusto nostrum possimus cum pariatur
+              harum assumenda suscipit a, qui, tempora maxime nulla facere quo
+              ipsum tempore. Atque libero provident ad aut officia pariatur
+              voluptate quaerat delectus nesciunt, sequi eligendi aperiam
+              fugit unde nihil, iste similique illum. Dignissimos enim officia
+              consequuntur dolores.
+            </p>
+            <button class="my-button" onclick="myFunction()">View Detail</button>
+          </div>
+          <div class="featured-slide swiper-slide">
+            <img src={% static "images/portfolio7.jpg" %} alt="" />
+            <h3>Property 3</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem dignissimos aliquid iure delectus corrupti
+              impedit, beatae aperiam ad iusto nostrum possimus cum pariatur
+              harum assumenda suscipit a, qui, tempora maxime nulla facere quo
+              ipsum tempore. Atque libero provident ad aut officia pariatur
+              voluptate quaerat delectus nesciunt, sequi eligendi aperiam
+              fugit unde nihil, iste similique illum. Dignissimos enim officia
+              consequuntur dolores.
+            </p>
+            <button class="my-button" onclick="myFunction()">View Detail</button>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  <div class="profession-container">
+    <div class="profession-box">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="home-img">
+    <img src={% static "images/Elon.png" %} alt="" />
+  </div>
+</section>
+<section class="allproperties" id="allproperties">
+    <h2 class="allheading">All <span>Properties</span></h2>
+
+    <div class="allproperties-container">
+      <div class="allproperties-box">
+        <img src={% static "images/portfolio1.jpg" %} alt="" />
+
+        <div class="allproperties-layer">
+          <h4>Click For Detail</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique, ipsam est.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="allproperties-box">
+        <img src={% static "images/portfolio2.jpg" %} alt="" />
+
+        <div class="allproperties-layer">
+          <h4>Click For Detail</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique, ipsam est.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="allproperties-box">
+        <img src={% static "images/portfolio3.jpg" %} alt="" />
+
+        <div class="allproperties-layer">
+          <h4>Click For Detail</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique, ipsam est.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="allproperties-box">
+        <img src={% static "images/portfolio4.jpg" %} alt="" />
+
+        <div class="allproperties-layer">
+          <h4>Click For Detail</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique, ipsam est.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="allproperties-box">
+        <img src={% static "images/portfolio5.jpg" %} alt="" />
+
+        <div class="allproperties-layer">
+          <h4>Click For Detail</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique, ipsam est.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="allproperties-box">
+        <img src={% static "images/portfolio6.jpg" %} alt="" />
+
+        <div class="allproperties-layer">
+          <h4>Click For Detail</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique, ipsam est.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="allproperties-box">
+        <img src={% static "images/portfolio7.jpg" %} alt="" />
+
+        <div class="allproperties-layer">
+          <h4>Click For Detail</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique, ipsam est.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="allproperties-box">
+        <img src={% static "images/portfolio8.jpg" %} alt="" />
+
+        <div class="allproperties-layer">
+          <h4>Click For Detail</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique, ipsam est.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="allproperties-box">
+        <img src={% static "images/portfolio9.jpg" %} alt="" />
+        <div class="allproperties-layer">
+          <h4>Click For Detail</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique, ipsam est.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="aboutme" id="aboutme">
+  <div class="aboutme-img">
+      <img src={% static "images/Elon.png" %} alt="" />
+  </div>
+
+  <div class="aboutme-content">
+    <h2 class="heading">About <span>Me</span></h2>
+    <h3>Hi, I'm Carlos Musk...</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+      corrupti aut at, cupiditate, fugit similique illum vitae eaque
+      voluptates consequatur ipsam doloribus eum dolor. Enim autem tempora
+      odio incidunt! Ipsam hic molestias ad voluptas doloribus ratione animi
+      alias dicta quo.
+    </p>
+    <a href="#" class="aboutmebtn">Read More</a>
+  </div>
+</section>
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" />
+        <input type="email" placeholder="Email Address" />
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number" />
+        <input type="text" placeholder="Email Subject" />
+      </div>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Your Message"
+      ></textarea>
+      <input type="submit" value="Send Message" class="btn" />
+    </form>
+
+</section>
+
+{% endblock %}

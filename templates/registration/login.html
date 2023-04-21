@@ -1,0 +1,33 @@
+
+{% load crispy_forms_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>login</title>
+  <link rel="stylesheet" href={% static "css/admin.css" %} />
+</head>
+
+<body style="padding-left:20%;padding-top: 5%;padding-right: 20%;">
+  <form method="POST" >
+    {% csrf_token %}
+    {{ form|crispy }}      
+
+    <button class="btn" type="submit" id="login">Login</button>
+</form>
+
+    <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+    <span class="psw"><a href={% url 'password_reset' %}>Forgot password?</a></span>
+    <div class="register">
+      <a href={% url 'register' %}
+        ><i class="Register"></i>Register Account</a
+      >
+    </div>
+
+    <button type="button" class="backhome"
+    > <a href="http://127.0.0.1:7000/"
+    >Back to Home</a>
+    </button>
+</body>
+</html>
